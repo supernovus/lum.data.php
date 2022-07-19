@@ -1,0 +1,40 @@
+{
+  "name": "lum/lum-data",
+  "description": "Data Objects - objects with multiple data formats",
+  "license": "MIT",
+  "authors":
+  [
+    {
+      "name": "Timothy Totten",
+      "email": "supernovus@gmail.com",
+      "role": "Original Author"
+    }
+  ],
+  "require":
+  {
+    "lum/lum-compat": "^2.6",
+    "lum/lum-meta": "^1.0"
+  },
+  "require-dev":
+  {
+    "lum/lum-test": "^3.0"
+  },
+  "autoload":
+  {
+    "psr-4":
+    {
+      "Lum\\Data\\": "lib"
+    }
+  },
+  "scripts":
+  {
+    "test": "lumtest"
+  },
+  "extra":
+  {
+    "branch-alias":
+    {
+      "dev-main": "1.x-dev"
+    }
+  }
+}
