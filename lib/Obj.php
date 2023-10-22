@@ -117,6 +117,12 @@ abstract class Obj extends O implements \JsonSerializable
     return $this->load_array($array, $opts);
   }
 
+  // As cheap as load_array
+  public function load_bson_document($bson, $opts=null)
+  {
+    return $bson;
+  }
+
   // Output as an array. Just as cheap as load_array().
   public function to_array ($opts=Null)
   {

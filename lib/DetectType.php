@@ -50,6 +50,11 @@ trait DetectType
       {
         return 'dom_node';
       }
+      elseif (class_exists('\MongoDB\Model\BSONDocument') 
+        && $data instanceof \MongoDB\Model\BSONDocument)
+      {
+        return 'bson_document';
+      }
     }
   }
 
